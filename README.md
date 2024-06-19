@@ -2,6 +2,7 @@
 
 ## Introduction
 Welcome to the Pokémon Card Generator! This app allows you to create, view, edit, and delete custom Pokémon cards. You can search for your favorite Pokémon, generate their card, and explore various features. This is my second attempt of making a pokemon card app. I first attempt was made during my days in a Programming BootCamp with PerScholas using the MERN stack the link will be added here at a later date.
+Link to my backend code can be found here - https://github.com/J0hn316/PokemonCardGeneratorV2BE
 
 ## Features
 - Search and Create Pokémon Cards: Users can search for a Pokémon by name, and a custom card will be generated with its stats and type.
