@@ -1,0 +1,126 @@
+/* allPokemonCards.css */
+
+.ShowAllPage {
+  display: flex;
+
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+.ShowAllPage h1 {
+  position: absolute;
+  left: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 19%;
+  left: 2%;
+  gap: 30px;
+  width: 95rem;
+  height: 38rem;
+}
+
+.card-container {
+  height: fit-content;
+  width: fit-content;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding: 10px 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 15em;
+  height: fit-content;
+}
+
+.Card p {
+  font-size: 1.2rem;
+}
+
+.card img {
+  display: block;
+  left: 15%;
+
+  width: 10em;
+  position: relative;
+}
+.poke-name {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}
+
+.poke-type {
+  position: relative;
+  width: 5em;
+  left: 31%;
+}
+.poke-type p {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+img {
+  bottom: 10px;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* .shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

@@ -1,0 +1,22 @@
+.CreateCardPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+/* 
+.CreateCardPage h1,
+form {
+  position: relative;
+  bottom: 10rem;
+} */
+
+.CreateCardPage button {
+  background-color: green;
+  padding: 1px;
+  margin-left: 10px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
