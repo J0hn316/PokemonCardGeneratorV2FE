@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { createCard } from '../../api/CardApi';
 import LoadingIcon from '../../components/LoadingIcon/LoadingIcon';
 import './createPage.css';
+import { checkPokemonName } from '../../api/PokeApi';
 
 export default function CreatePokemonCard() {
   const [loading, setLoading] = useState('');
@@ -11,6 +12,9 @@ export default function CreatePokemonCard() {
   const createTheCard = (event) => {
     event.preventDefault();
     const card = { name: event.target.name.value };
+    if (!checkPokemonName(card.name)) {
+      return;
+    }
     setLoading('active');
     createCard(card).then(() => nav('/cards/show-all'));
   };

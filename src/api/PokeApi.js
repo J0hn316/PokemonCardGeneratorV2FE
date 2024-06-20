@@ -13,6 +13,18 @@ export async function getPokemonByName(name) {
   }
 }
 
+export async function checkPokemonName(name) {
+  try {
+    const res = await fetch(`${pokemon_API}pokemon/${name}`);
+    if (!res.ok) {
+      alert('Pokémon not found');
+      window.location.reload();
+    }
+  } catch (error) {
+    console.error('Error checking Pokémon name:', error);
+  }
+}
+
 export async function getTheTypeOfPokemon(name) {
   try {
     const res = await axios.get(`${pokemon_API}pokemon/${name}`);

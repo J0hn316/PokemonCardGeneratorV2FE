@@ -5,7 +5,7 @@ import {
 } from '../../api/CardApi';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getPokemonByName } from '../../api/PokeApi';
+import { checkPokemonName, getPokemonByName } from '../../api/PokeApi';
 import './editPage.css';
 
 export default function EditPage() {
@@ -34,6 +34,10 @@ export default function EditPage() {
       name: event.target.name.value,
       img: event.target.img,
     };
+    if (!checkPokemonName(updateCard.name)) {
+      return;
+    }
+
     try {
       await editByIdAndUpdateCard(id, updateCard);
       nav('/cards/show-all');
