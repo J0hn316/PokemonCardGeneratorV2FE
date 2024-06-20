@@ -2,7 +2,6 @@
 
 .ShowAllPage {
   display: flex;
-
   height: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: black;
@@ -81,13 +80,7 @@ img {
 
 .card:hover {
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
 }
-
-/* .shake {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-} */
 
 @keyframes shake {
   0% {

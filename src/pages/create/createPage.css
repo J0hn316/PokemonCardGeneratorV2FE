@@ -7,12 +7,10 @@
   background-color: black;
   font-family: 'Pixelify Sans', sans-serif;
 }
-/* 
-.CreateCardPage h1,
-form {
-  position: relative;
-  bottom: 10rem;
-} */
+
+.CreateCardPage input {
+  color: black;
+}
 
 .CreateCardPage button {
   background-color: green;
