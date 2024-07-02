@@ -26,3 +26,6 @@ My first attempt was made during my days in a Programming BootCamp with PerSchol
 Frontend: HTML, CSS, JavaScript, React
 Backend: Node.js, Express.js
 Database: MongoBD 
+
+## Acknowledgments
+My instructor/mentor-Kasper/Patrick for allowing me to some of his code for displaying stats and moves of pokemon.
