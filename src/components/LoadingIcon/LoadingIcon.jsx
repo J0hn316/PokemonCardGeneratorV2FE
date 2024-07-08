@@ -8,7 +8,7 @@ export default function LoadingIcon({ active }) {
         <div></div>
       </div>
       <br />
-      <p className="LoadingText">wait for it...</p>
+      <p className="LoadingText">searching for pokemon...</p>
     </div>
   );
 }
