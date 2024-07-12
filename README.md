@@ -1,11 +1,13 @@
 ## Pokémon Card Generator App V2
 
 ## Introduction
+
 Welcome to the Pokémon Card Generator! This app allows you to create, view, edit, and delete custom Pokémon cards. You can search for your favorite Pokémon, generate their card, and explore various features. This is my second attempt of making a pokemon card app.
 Link to my backend code can be found here - https://github.com/J0hn316/PokemonCardGeneratorV2BE
 My first attempt was made during my days in a Programming BootCamp with PerScholas using the MERN stack Link to that project is - https://github.com/J0hn316/FinalProjectFrontEnd
 
 ## Features
+
 - Search and Create Pokémon Cards: Users can search for a Pokémon by name, and a custom card will be generated with its stats and type.
 
 - View Pokémon Cards: Users can view all the created Pokémon cards in a collection.
@@ -20,12 +22,20 @@ My first attempt was made during my days in a Programming BootCamp with PerSchol
 
 - Detailed View: Click on a card to be redirected to a detailed page featuring the Pokémon as a gif, more stats, and its moveset.
 
-
 ## Technologies Used
 
 Frontend: HTML, CSS, JavaScript, React
 Backend: Node.js, Express.js
-Database: MongoBD 
+Database: MongoBD
+
+## Setting Up Environment Variables
+
+1. Create a .env file in the root directory of the project.
+
+2. Add the following environment variables to the .env file:
+
+- MONGO_URI: The connection string to your MongoDB database.
 
 ## Acknowledgments
+
 My instructor/mentor-Kasper/Patrick for allowing me to some of his code for displaying stats and moves of pokemon.

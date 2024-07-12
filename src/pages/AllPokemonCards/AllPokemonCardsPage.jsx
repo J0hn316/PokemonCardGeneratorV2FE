@@ -64,6 +64,7 @@ export default function AllPokemonCards() {
     try {
       const pokemon = await getPokemonByName(name);
       const audio = new Audio(pokemon.cries.latest);
+      audio.volume = 0.5;
       audio.play();
     } catch (error) {
       console.error('Error fetching Pokemon Sound:', error);
